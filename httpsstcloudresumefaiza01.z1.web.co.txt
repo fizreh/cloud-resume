@@ -7,3 +7,21 @@ P@ssword1234
 
 ADO.Net Connection astring
 Server=tcp:sql-cloudresume-faiza01.database.windows.net,1433;Initial Catalog=sqldb-visitors;Persist Security Info=False;User ID=sqladmin;Password=P@ssword1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;
+
+
+Azure Entra
+Application (client) ID
+:
+dc4cad15-b83f-4199-951d-d780018b2de0
+
+Directory (tenant) ID
+:
+85aa284f-dcb8-42c7-bfc6-e0051e608e91
+
+
+Githum 
+repo:
+Organization ID: fizreh@23035266/
+Repository ID: cloud-resume@1461099123
+
+Azure Subscription ID:5b0baa42-df5d-4110-be3d-e7ce0fe27fe1
