@@ -1,71 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faiza Siddiqi - Software Developer</title>
+    <meta name="description" content="Lebenslauf von Faiza Siddiqi, Full-Stack-Softwareentwicklerin mit Schwerpunkt Backend (NestJS, Node.js, .NET) und wachsender Cloud-Kompetenz auf Azure.">
+    <title>Faiza Siddiqi – Full-Stack-Softwareentwicklerin</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Faiza Siddiqi</h1>
-        <p>Full-Stack Software Developer - C# / .NET - Angular - React - Azure (learning)</p>
-    </header>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-    <main>
-        <!--<section>
-        <h2>About me</h2>
-        <p>
-            Software developer with over 3 years of experience in C#/.NET, Angular and React.
-            I am building this site on Azure to grow my cloud engineering skills.
-        </p>
-    </section>
+    <div class="page">
 
-    <section>
-        <h2>Skills</h2>
-        <ul class="skills">
-            <li>C# / .NET</li>
-            <li>SQL</li>
-            <li>Angular</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Azure (in progress)</li>
-        </ul>
-    </section>
+        <header class="site-header">
+            <nav class="nav" aria-label="Hauptnavigation">
+                <a class="brand" href="#top">FRS</a>
+                <ul class="nav-links">
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#faehigkeiten">Fähigkeiten</a></li>
+                    <li><a href="#erfahrung">Erfahrung</a></li>
+                    <li><a href="#projekte">Projekte</a></li>
+                    <li><a href="#ausbildung">Ausbildung</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+                <button id="theme-toggle" class="icon-button" type="button" aria-label="Zwischen hellem und dunklem Modus wechseln">◐</button>
+            </nav>
+        </header>
 
-    <section>
-        <h2>Experience</h2>
-        <h3>LegalAid (Remote) � Volunteer Software Developer</h3>
-        <p>Full-stack development with Next.js, NestJS and PostgreSQL.</p>
-        <h3>FNZ Group, Munich</h3>
-        <p>Add 1-2 lines about what you did here.</p>
-        <h3>BMW AG, Munich � Werkstudent</h3>
-        <p>Add 1-2 lines about what you did here.</p>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <p>Diplom-Ingenieurin der Informatik</p>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: your-email@example.com - LinkedIn: add-your-link � GitHub: add-your-link</p>
-    </section>-->
-        <section id="cv">
-            <h2>My CV</h2>
-            <p>
-                <a class="button" href="Faiza-Siddiqi-CV.pdf" download>Download CV (PDF)</a>
-                <!--<a class="button secondary" href="Faiza-Siddiqi-CV.pdf" target="_blank" rel="noopener">Open in new tab</a>-->
+        <section class="hero" id="top">
+            <h1>Faiza Siddiqi</h1>
+            <p class="tagline">Full-Stack-Softwareentwicklerin · NestJS · Node.js · .NET · Angular · React</p>
+            <p class="subline">München, Deutschland · Aufbau von Cloud-Kompetenz auf Microsoft Azure. Diese Seite läuft selbst auf Azure.</p>
+            <p class="actions">
+                <a class="button" href="Faiza-Siddiqi-CV.pdf" download>CV herunterladen (PDF)</a>
+                <!-- <a class="button secondary" href="cv.pdf" target="_blank" rel="noopener">Im neuen Tab öffnen</a> -->
             </p>
-            <iframe class="cv-viewer" src="Faiza-Siddiqi-CV.pdf" title="Faiza Siddiqi CV"></iframe>
         </section>
-    </main>
 
-    <footer>
-        <p>Visitors: <span id="visitor-count">--</span></p>
-    </footer>
+        <main id="main">
 
+            <section id="profil" class="card">
+                <h2>Profil</h2>
+                <p class="highlight">
+                    <strong>3+ Jahre Berufserfahrung</strong> in der Full-Stack-Softwareentwicklung,
+                    mit Schwerpunkt auf Backend (NestJS, Node.js, .NET).
+                </p>
+                <p>
+                    Motivierte Full-Stack-Softwareentwicklerin mit Schwerpunkt auf Backend-Technologien (NestJS, Node.js, .NET)
+                    und über 3 Jahren Erfahrung in der Konzeption und Umsetzung sicherer, skalierbarer REST-APIs und moderner
+                    Webanwendungen.
+                </p>
+                <p>
+                    Sicheres Verständnis für API-Design, Systemarchitektur und die Integration komplexer Systeme.
+                    Frontend-Erfahrung mit Angular, TypeScript und React zur nahtlosen Anbindung moderner, responsiver
+                    Oberflächen an Backend-Systeme.
+                </p>
+                <p>
+                    Anwendung von SOLID- und DRY-Prinzipien für wartbare, performante Lösungen. Begeistert von technischer
+                    Exzellenz, sauberem Code und dem produktiven Einsatz KI-gestützter Entwicklungswerkzeuge wie GitHub Copilot
+                    und OpenAI Codex.
+                </p>
+            </section>
+
+            <section id="faehigkeiten" class="card">
+                <h2>Technische Fähigkeiten</h2>
+
+                <div class="skill-group">
+                    <h3>Backend &amp; APIs</h3>
+                    <ul class="chips">
+                        <li>NestJS</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>.NET (Core, MVC, .NET 9)</li>
+                        <li>C#</li>
+                        <li>EF Core</li>
+                        <li>RESTful API-Design</li>
+                        <li>API-Sicherheit (Caching, Rate-Limiting, Auth, Idempotenz)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <ul class="chips">
+                        <li>Angular</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Datenbanken</h3>
+                    <ul class="chips">
+                        <li>MS SQL Server</li>
+                        <li>Oracle</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Cloud &amp; DevOps</h3>
+                    <ul class="chips">
+                        <li>Azure</li>
+                        <li>Docker</li>
+                        <li>CI/CD Pipelines (Jenkins, GitHub Actions)</li>
+                        <li>Google Cloud</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Tools &amp; Versionierung</h3>
+                    <ul class="chips">
+                        <li>PowerShell</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Bitbucket</li>
+                        <li>Jira</li>
+                        <li>Confluence</li>
+                        <li>Slack</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Softwarequalität</h3>
+                    <ul class="chips">
+                        <li>Agile</li>
+                        <li>Scrum</li>
+                        <li>SOLID</li>
+                        <li>DRY</li>
+                        <li>Clean Code</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>KI-gestützte Entwicklung</h3>
+                    <ul class="chips">
+                        <li>GitHub Copilot</li>
+                        <li>OpenAI Codex</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Soft Skills</h3>
+                    <ul class="chips">
+                        <li>Problemlösung und kritisches Denken</li>
+                        <li>Selbstmotivation und Eigeninitiative</li>
+                        <li>Teamarbeit</li>
+                        <li>Kontinuierliches Lernen und Weiterentwicklung</li>
+                        <li>Anpassungsfähigkeit und Flexibilität</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="erfahrung" class="card">
+                <h2>Berufserfahrung</h2>
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <h3>Volunteer Software Developer (Remote) · LegalAid</h3>
+                        <p class="meta">Berlin, Deutschland · Feb 2026 – Jetzt</p>
+                        <ul>
+                            <li>Entwicklung einer Full-Stack-Webanwendung mit Next.js, NestJS, Drizzle ORM und PostgreSQL in einer modularen Architektur, einschließlich wiederverwendbarer UI-Komponenten und responsiver Benutzeroberflächen.</li>
+                            <li>Entwurf und Implementierung einer CRUD-REST-API für juristische Vorgänge mit Caching, Rate Limiting, Authentifizierung/Autorisierung und Idempotenz zur Sicherstellung von Performance und Datensicherheit.</li>
+                            <li>Aufbau eines Admin-Bereichs mit geteilten Libraries in einem zentralen Package-Verzeichnis zur Wiederverwendung zwischen User- und Admin-Anwendung.</li>
+                            <li>Implementierung des Admin-App-Logins mit rollenbasierter Zugriffskontrolle (RBAC) mittels Better Auth zur Autorisierung von Administratoren beim Login.</li>
+                            <li>Konsequente Anwendung von SOLID- und DRY-Prinzipien bei der Architektur; Einsatz von OpenAI Codex zur Unterstützung bei der Analyse, der Implementierung und dem Refactoring.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Junior Software Developer · FNZ Group</h3>
+                        <p class="meta">München, Deutschland · Sept 2022 – Juli 2024</p>
+                        <ul>
+                            <li>Entwicklung moderner Webanwendungen mit ASP.NET Core, Entity Framework Core, React und SQL Server in einem agilen Scrum-Team, inkl. Schichtenarchitektur und REST-API-Design.</li>
+                            <li>Implementierung von REST-APIs und aktive Mitwirkung bei Architektur- und Designentscheidungen.</li>
+                            <li>Verantwortlich für Debugging, Fehleranalyse, Datenbankzugriffe mit EF Core, automatisierte Tests und kontinuierliche Bereitstellung über CI/CD.</li>
+                            <li>Enge Zusammenarbeit mit funktionsübergreifenden Teams (Dev, QA, BA, Delivery); Anwendung von Clean Code &amp; Best Practices zur Sicherstellung von Stabilität und Skalierbarkeit.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Werkstudent Full-Stack Developer · BMW AG</h3>
+                        <p class="meta">München, Deutschland · Mai 2021 – Juni 2022</p>
+                        <ul>
+                            <li>Entwicklung einer containerisierten Full-Stack-Webanwendung mit Angular, Express, PostgreSQL und Docker inklusive REST-APIs, Debugging sowie CI/CD mit Jenkins.</li>
+                            <li>Praktische Erfahrung mit Ein- und Zwei-Wege-Datenbindung, UI-Routern, Pipes und Erstellung benutzerdefinierter Direktiven in Angular.</li>
+                            <li>Praktische Erfahrung in der Erstellung von CRUD-APIs im Express und deren Aufruf vom Frontend (Angular).</li>
+                            <li>Verwendung der Jenkins-Pipeline für CI/CD und Bitbucket &amp; Jira für das Projektmanagement.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Werkstudent Web Developer · Jatosha GmbH</h3>
+                        <p class="meta">München, Deutschland · Dez 2020 – Apr 2021</p>
+                        <ul>
+                            <li>Entwicklung von Benutzeroberflächen mit modernem JavaScript, HTML und CSS.</li>
+                            <li>Entwicklung von Angular-Diensten, die die REST-APIs des .NET-Backends konsumieren.</li>
+                            <li>Verwendung von Bitbucket und Jira zur Projektverwaltung.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Software Engineering Intern · Digital Public School</h3>
+                        <p class="meta">München, Deutschland · Sept 2020 – Nov 2020</p>
+                        <ul>
+                            <li>Entwicklung einer Webanwendung mit React &amp; Firebase.</li>
+                            <li>Nutzung von gcloud und GitHub Actions für Deployment &amp; CI/CD.</li>
+                            <li>Arbeiten nach agiler Methodik (Sprint-Prozesse, Reviews, Dailies).</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Analyst Software Engineer · TRG (Ibex Global)</h3>
+                        <p class="meta">Karachi, Pakistan · Mär 2008 – Mär 2010</p>
+                        <ul>
+                            <li>Entwicklung von Webanwendungen &amp; Windows-Services mit ASP.NET, SQL &amp; C#.</li>
+                            <li>Design &amp; Implementierung von CRM-Modulen und Reporting-Diensten.</li>
+                            <li>Aufrechterhaltung des professionellen und technischen Wissens durch Schulungsworkshops und Zertifizierungen.</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="projekte" class="card">
+                <h2>Projekte</h2>
+
+                <article class="project">
+                    <h3>Cloud Resume: diese Website</h3>
+                    <p>
+                        Lebenslauf-Website mit Live-Besucherzähler, entstanden, um Azure praktisch zu lernen.
+                        Die statische Seite wird aus Azure Storage ausgeliefert und ruft eine C#-Azure-Function auf,
+                        die den Zählerstand in Azure SQL speichert.
+                    </p>
+                    <ul class="chips">
+                        <li>Azure Storage</li>
+                        <li>Azure Functions</li>
+                        <li>Azure SQL</li>
+                        <li>C# / .NET 9</li>
+                        <li>SOLID &amp; DRY</li>
+                    </ul>
+                    <p class="meta">Geheimnisse liegen weder im Code noch in Git; die API ist in Function-, Service- und Repository-Schicht getrennt.</p>
+                    <p><a href="https://github.com/fizreh/cloud-resume" target="_blank" rel="noopener">Code auf GitHub ansehen</a></p>
+                </article>
+
+                <article class="project">
+                    <h3>SMT_OMS</h3>
+                    <p class="meta">Eigenes Projekt – Systemdesign</p>
+                    <p>
+                        Umsetzung eines Order-Management-Systems mit ASP.NET Core, Entity Framework Core und SQLite in einer
+                        sauberen, modularen Architektur nach SOLID- und DRY-Prinzipien. Einsatz von Docker und GitHub Actions
+                        für automatisierte Builds und Continuous Integration.
+                    </p>
+                    <p><a href="https://github.com/fizreh/SMT-OMS" target="_blank" rel="noopener">SMT-OMS auf GitHub</a></p>
+                </article>
+
+                <article class="project">
+                    <h3>Event-Driven WPF Task Management System</h3>
+                    <p class="meta">Eigenes Projekt – Systemdesign</p>
+                    <ul>
+                        <li>Entwicklung und Umsetzung einer WPF-Desktop-Anwendung mit einer MVVM-ähnlichen Struktur und eventbasierter Architektur.</li>
+                        <li>Anwendung von SOLID- und DRY-Prinzipien für gut wartbaren und erweiterbaren Code.</li>
+                        <li>Nutzung von Entity Framework Core für die Speicherung und Verwaltung von Daten.</li>
+                        <li>Aufbau von modularen Services und getrennten Komponenten für bessere Testbarkeit und Erweiterbarkeit.</li>
+                        <li>Umsetzung als praxisnahes Projekt mit typischer Enterprise-Architektur.</li>
+                    </ul>
+                    <p><a href="https://github.com/fizreh/Task-Manager" target="_blank" rel="noopener">Task Manager auf GitHub</a></p>
+                </article>
+            </section>
+
+            <section id="ausbildung" class="card">
+                <h2>Ausbildung &amp; Zertifizierungen</h2>
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <h3>Azure Foundation – Zertifizierung</h3>
+                        <p class="meta">Microsoft · Online · Geplant am 17. Dez. 2026</p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>DevOps Foundation – Zertifizierung</h3>
+                        <p class="meta">PeopleCert · Online · Bestanden am 29. Juli 2026</p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Fortgeschrittene Schulung im Bereich Cloud Computing mit zusätzlicher Qualifikation in DevOps und Docker</h3>
+                        <p class="meta">velpTEC GmbH · München, Deutschland · Sept 2025 – Jan 2026</p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>B2 Berufssprachkurs</h3>
+                        <p class="meta">BFZ · München, Deutschland · Sept 2024 – Apr 2025</p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Integrationskurs (B1) mit Kinderbetreuung</h3>
+                        <p class="meta">Initiativgruppe · München, Deutschland · Sept 2013 – Apr 2015</p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Bachelor of Science in Computer Engineering</h3>
+                        <p class="meta">Sir Syed University of Engg &amp; Tech · Karachi, Pakistan · Jan 2004 – Mär 2008</p>
+                        <p>Final GPA: 3.28 (best: 4.0)</p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="persoenlich" class="card">
+                <h2>Persönliche Informationen</h2>
+                <div class="skill-group">
+                    <h3>Sprachen</h3>
+                    <ul class="chips">
+                        <li>Deutsch (B2)</li>
+                        <li>Englisch (C1)</li>
+                    </ul>
+                </div>
+                <p><strong>Staatsangehörigkeit:</strong> Deutsch</p>
+            </section>
+
+            <section id="kontakt" class="card">
+                <h2>Kontakt</h2>
+                <ul class="contact-list">
+                    <li>E-Mail: <a href="mailto:Phaeza31@gmail.com">Phaeza31@gmail.com</a></li>
+                    <li>Standort: München, Deutschland</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/fizreh" target="_blank" rel="noopener">Profil ansehen</a></li>
+                    <li>GitHub: <a href="https://github.com/fizreh" target="_blank" rel="noopener">Profil ansehen</a></li>
+                </ul>
+                <p><a class="button" href="Faiza-Siddiqi-CV.pdf" download>CV herunterladen (PDF)</a></p>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <p>Besucher: <span id="visitor-count">--</span></p>
+            <p class="meta">© <span id="year"></span> Faiza Siddiqi</p>
+        </footer>
+
+    </div>
+
+    <script src="config.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
