@@ -1,23 +1,79 @@
-const API_URL = "https://func-resume-faiza-aubce8apgqdjdagb.swedencentral-01.azurewebsites.net/api/visitor";
 
-async function loadVisitorCount() {
-    const counter = document.getElementById("visitor-count");
-    counter.textContent = "...";
+// ---------- Visitor counter (shows the last known number while the new one loads) ----------
+const API_URL = "https://func-resume-faiza-aubce8apgqdjdagb.swedencentral-01.azurewebsites.net/api/visitor";
+const CACHE_KEY = "visitorCount";
+const REQUEST_TIMEOUT_MS = 70000; // a sleeping database can take about a minute to wake up
+const MAX_ATTEMPTS = 3;
+const RETRY_DELAY_MS = 5000;
+
+function readCachedCount() {
+    try {
+        const value = Number(localStorage.getItem(CACHE_KEY));
+        return Number.isInteger(value) && value > 0 ? value : null;
+    } catch {
+        return null; // storage can be blocked by the browser
+    }
+}
+
+function writeCachedCount(count) {
+    try {
+        localStorage.setItem(CACHE_KEY, String(count));
+    } catch {
+        // Ignore: the counter still works, it just isn't remembered.
+    }
+}
+
+async function fetchCount() {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
     try {
-        const response = await fetch(API_URL);
+        const response = await fetch(API_URL, { signal: controller.signal });
         if (!response.ok) {
             throw new Error(`Request failed with status ${response.status}`);
         }
         const data = await response.json();
-        counter.textContent = data.count;
-    } catch (error) {
-        console.error("Could not load visitor count:", error);
-        counter.textContent = "unavailable";
+        if (!Number.isInteger(data.count)) {
+            throw new Error("Unexpected response from the API");
+        }
+        return data.count;
+    } finally {
+        clearTimeout(timer);
     }
 }
 
-//New Code
+async function loadVisitorCount() {
+    const counter = document.getElementById("visitor-count");
+    const cached = readCachedCount();
+
+    // Show the last known number right away, or a loading text on the first visit.
+    counter.textContent = cached ?? "wird geladen …";
+    counter.classList.add("is-updating");
+
+    try {
+        for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+            try {
+                const count = await fetchCount();
+                counter.textContent = count;
+                writeCachedCount(count);
+                return;
+            } catch (error) {
+                console.error(`Visitor count, attempt ${attempt} failed:`, error);
+                if (attempt < MAX_ATTEMPTS) {
+                    await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY_MS));
+                }
+            }
+        }
+
+        // All attempts failed: keep the last known number, or say so on a first visit.
+        if (cached === null) {
+            counter.textContent = "momentan nicht verfügbar";
+        }
+    } finally {
+        counter.classList.remove("is-updating");
+    }
+}
+
 
 // ---------- Light / dark mode ----------
 function initTheme() {
