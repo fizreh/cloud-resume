@@ -407,3 +407,12 @@ main {
 		scroll-behavior: auto;
 	}
 }
+/* Visitor counter: dimmed while the fresh number is loading */
+#visitor-count {
+	font-weight: 700;
+	transition: opacity 0.3s;
+}
+
+	#visitor-count.is-updating {
+		opacity: 0.55;
+	}
