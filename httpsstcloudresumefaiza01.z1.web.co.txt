@@ -1,0 +1,9 @@
+https://stcloudresumefaiza01.z1.web.core.windows.net/
+backend url:
+https://func-resume-faiza-aubce8apgqdjdagb.swedencentral-01.azurewebsites.net/api/visitor
+
+sqladmin
+P@ssword1234
+
+ADO.Net Connection astring
+Server=tcp:sql-cloudresume-faiza01.database.windows.net,1433;Initial Catalog=sqldb-visitors;Persist Security Info=False;User ID=sqladmin;Password=P@ssword1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;

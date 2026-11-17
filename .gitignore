@@ -1,0 +1,15 @@
+# Secrets: never commit these
+.env
+.env.*
+!.env.example
+local.settings.json
+
+# Build output and IDE files
+bin/
+obj/
+.vs/
+*.user
+
+# Local backups
+frontend_backup*/
+*_old/
