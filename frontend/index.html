@@ -18,6 +18,7 @@
                 <a class="brand" href="#top">FRS</a>
                 <ul class="nav-links">
                     <li><a href="#profil">Profil</a></li>
+                    <li><a href="#jobmatch">Job-Match</a></li>
                     <li><a href="#faehigkeiten">Fähigkeiten</a></li>
                     <li><a href="#erfahrung">Erfahrung</a></li>
                     <li><a href="#projekte">Projekte</a></li>
@@ -62,7 +63,42 @@
                     und OpenAI Codex.
                 </p>
             </section>
+            <section id="jobmatch" class="card">
+                <h2>Job-Match prüfen</h2>
+                <p>
+                    Fügen Sie eine Stellenbeschreibung ein und sehen Sie, wie gut mein Profil dazu passt.
+                    Das Ergebnis ist eine ATS-ähnliche Schätzung und nicht das Ergebnis eines echten
+                    Bewerbermanagementsystems.
+                </p>
 
+                <label for="job-text" class="sr-only">Stellenbeschreibung</label>
+                <textarea id="job-text" rows="9" maxlength="5000" placeholder="Stellenbeschreibung hier einfügen …"></textarea>
+
+                <div class="jm-actions">
+                    <button id="job-analyze" class="button" type="button">Analysieren</button>
+                    <span id="job-counter" class="meta">0 / 5000 Zeichen</span>
+                </div>
+                <p id="job-status" class="meta" role="status" aria-live="polite"></p>
+
+                <div id="job-result" class="jm-result" hidden>
+                    <div class="jm-score">
+                        <div id="job-ring" class="jm-ring"><span id="job-score">0</span></div>
+                        <div>
+                            <p class="jm-grade">Note <strong id="job-grade">-</strong></p>
+                            <p id="job-source" class="meta"></p>
+                        </div>
+                    </div>
+                    <h3>Passt zu meinem Profil</h3>
+                    <ul id="job-matched" class="chips"></ul>
+                    <h3>Nicht im Profil gefunden</h3>
+                    <ul id="job-missing" class="chips jm-missing"></ul>
+                </div>
+
+                <p class="meta">
+                    Datenschutz: Der Text wird auf dieser Seite weder gespeichert noch protokolliert. Zur Auswertung
+                    wird er an Azure AI Language (Microsoft) gesendet. Bitte keine personenbezogenen Daten einfügen.
+                </p>
+            </section>
             <section id="faehigkeiten" class="card">
                 <h2>Technische Fähigkeiten</h2>
 

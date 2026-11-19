@@ -3,6 +3,8 @@
 .env.*
 !.env.example
 local.settings.json
+Cloud-Data.txt
+httpsstcloudresumefaiza01.z1.web.co.txt
 
 # Build output and IDE files
 bin/

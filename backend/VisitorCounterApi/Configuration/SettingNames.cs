@@ -4,5 +4,7 @@
     public static class SettingNames
     {
         public const string SqlConnectionString = "SqlConnectionString";
+        public const string LanguageEndpoint = "LanguageEndpoint";
+        public const string LanguageKey = "LanguageKey";
     }
 }

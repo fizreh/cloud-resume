@@ -1,6 +1,9 @@
+// ---------- Addresses (the base URL comes from config.js) ----------
+const API_BASE_URL = window.APP_CONFIG.apiBaseUrl;
+const VISITOR_URL = `${API_BASE_URL}/api/visitor`;
+const ANALYZE_URL = `${API_BASE_URL}/api/analyze`;
 
 // ---------- Visitor counter (shows the last known number while the new one loads) ----------
-const API_URL = "https://func-resume-faiza-aubce8apgqdjdagb.swedencentral-01.azurewebsites.net/api/visitor";
 const CACHE_KEY = "visitorCount";
 const REQUEST_TIMEOUT_MS = 70000; // a sleeping database can take about a minute to wake up
 const MAX_ATTEMPTS = 3;
@@ -28,7 +31,7 @@ async function fetchCount() {
     const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
     try {
-        const response = await fetch(API_URL, { signal: controller.signal });
+        const response = await fetch(VISITOR_URL, { signal: controller.signal });
         if (!response.ok) {
             throw new Error(`Request failed with status ${response.status}`);
         }
@@ -46,7 +49,6 @@ async function loadVisitorCount() {
     const counter = document.getElementById("visitor-count");
     const cached = readCachedCount();
 
-    // Show the last known number right away, or a loading text on the first visit.
     counter.textContent = cached ?? "wird geladen …";
     counter.classList.add("is-updating");
 
@@ -65,7 +67,6 @@ async function loadVisitorCount() {
             }
         }
 
-        // All attempts failed: keep the last known number, or say so on a first visit.
         if (cached === null) {
             counter.textContent = "momentan nicht verfügbar";
         }
@@ -74,6 +75,101 @@ async function loadVisitorCount() {
     }
 }
 
+// ---------- Job-Match ----------
+const ANALYZE_TIMEOUT_MS = 30000;
+const MIN_JOB_LENGTH = 80;
+
+function renderChips(listElement, items, emptyText) {
+    listElement.replaceChildren();
+    const values = items.length > 0 ? items : [emptyText];
+    values.forEach((value) => {
+        const item = document.createElement("li");
+        item.textContent = value; // textContent: nothing from the API can run as HTML
+        listElement.appendChild(item);
+    });
+}
+
+async function requestAnalysis(jobDescription) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), ANALYZE_TIMEOUT_MS);
+
+    try {
+        const response = await fetch(ANALYZE_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ jobDescription }),
+            signal: controller.signal
+        });
+
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok) {
+            throw new Error(typeof data.error === "string" ? data.error : `Fehler ${response.status}`);
+        }
+        return data;
+    } finally {
+        clearTimeout(timer);
+    }
+}
+
+function showResult(data) {
+    const score = Math.min(100, Math.max(0, Math.round(Number(data.score) || 0)));
+    const grade = /^[A-E]$/.test(data.grade) ? data.grade : "?";
+    const matched = Array.isArray(data.matched) ? data.matched.map(String) : [];
+    const missing = Array.isArray(data.missing) ? data.missing.map(String) : [];
+
+    document.getElementById("job-score").textContent = score;
+    document.getElementById("job-ring").style.setProperty("--pct", score);
+    document.getElementById("job-grade").textContent = grade;
+    document.getElementById("job-source").textContent =
+        `ATS-ähnliche Schätzung · Keyword-Erkennung: ${String(data.source ?? "unbekannt")}`;
+
+    renderChips(document.getElementById("job-matched"), matched, "Keine Übereinstimmung gefunden");
+    renderChips(document.getElementById("job-missing"), missing, "Alles gefunden");
+    document.getElementById("job-result").hidden = false;
+}
+
+function initJobMatch() {
+    const input = document.getElementById("job-text");
+    const button = document.getElementById("job-analyze");
+    const status = document.getElementById("job-status");
+    const counter = document.getElementById("job-counter");
+    const result = document.getElementById("job-result");
+    if (!input || !button) return;
+
+    const updateCounter = () => {
+        counter.textContent = `${input.value.length} / ${input.maxLength} Zeichen`;
+    };
+    input.addEventListener("input", updateCounter);
+    updateCounter();
+
+    button.addEventListener("click", async () => {
+        const text = input.value.trim();
+        if (text.length < MIN_JOB_LENGTH) {
+            status.textContent = `Bitte mindestens ${MIN_JOB_LENGTH} Zeichen einfügen.`;
+            return;
+        }
+
+        button.disabled = true;
+        result.hidden = true;
+        status.textContent = "Analyse läuft …";
+
+        try {
+            showResult(await requestAnalysis(text));
+            status.textContent = "";
+        } catch (error) {
+            console.error("Job match failed:", error);
+            if (error.name === "AbortError") {
+                status.textContent = "Zeitüberschreitung. Bitte erneut versuchen.";
+            } else if (error instanceof TypeError) {
+                status.textContent = "Keine Verbindung zum Server.";
+            } else {
+                status.textContent = error.message || "Die Analyse ist momentan nicht verfügbar.";
+            }
+        } finally {
+            button.disabled = false;
+        }
+    });
+}
 
 // ---------- Light / dark mode ----------
 function initTheme() {
@@ -127,4 +223,5 @@ function initScrollSpy() {
 document.getElementById("year").textContent = new Date().getFullYear();
 initTheme();
 initScrollSpy();
+initJobMatch();
 loadVisitorCount();
