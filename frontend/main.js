@@ -121,7 +121,7 @@ function showResult(data) {
     document.getElementById("job-ring").style.setProperty("--pct", score);
     document.getElementById("job-grade").textContent = grade;
     document.getElementById("job-source").textContent =
-        `ATS-ähnliche Schätzung · Keyword-Erkennung: ${String(data.source ?? "unbekannt")}`;
+        `ATS-aehnliche Schaetzung · Keyword-Erkennung: ${String(data.source ?? "unbekannt")}`;
 
     renderChips(document.getElementById("job-matched"), matched, "Keine Übereinstimmung gefunden");
     renderChips(document.getElementById("job-missing"), missing, "Alles gefunden");
