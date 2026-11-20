@@ -1,90 +1,81 @@
 Faiza Siddiqi
-PROFIL
-Motivierte Full-Stack-Softwareentwicklerin mit Schwerpunkt auf Backend-Technologien (NestJS, Node.js, .NET) und über 3
-Jahren Erfahrung in der Konzeption und Umsetzung sicherer, skalierbarer REST-APIs und moderner Webanwendungen.
-Sicheres Verständnis für API-Design, Systemarchitektur und die Integration komplexer Systeme. Frontend-Erfahrung mit
-Angular, TypeScript und React zur nahtlosen Anbindung moderner, responsiver Oberflächen an Backend-Systeme.
-Anwendung der SOLID- und DRY-Prinzipien für wartbare, performante Lösungen. Begeistert von technischer Exzellenz,
-sauberem Code und dem produktiven Einsatz von KI-gestützten Entwicklungswerkzeugen wie GitHub Copilot und OpenAI
-Codex.
-TECHNISCHE FÄHIGKEITEN
+Phaeza31@gmail.com | München, Deutschland | Github | LinkedIn
+Profil
+Motivierte Softwareentwicklerin mit Fokus auf Backend-Systeme (C# / .NET, Node.js / NestJS) und über drei Jahren Berufserfahrung in der Entwicklung sicherer REST-APIs und moderner Webanwendungen. Ich bringe Erfahrung mit Docker, CI/CD und ersten Cloud-Lösungen auf Azure und Google Cloud mit und möchte meinen Schwerpunkt gezielt weiter in Richtung Cloud-Entwicklung ausbauen. Mir sind saubere Strukturen, wartbarer Code (SOLID, DRY), gute Zusammenarbeit im Team und der praktische Einsatz von KI-Werkzeugen wie GitHub Copilot und OpenAI Codex wichtig. Deutsch spreche ich auf B2-Niveau, Englisch auf C1-Niveau. 
+Technische Fähigkeiten
 Backend & APIs: NestJS, Node.js, Express, .NET (Core, MVC, .NET 9), C#, EF Core, RESTful API-Design, API-Sicherheit
-(Caching, Rate-Limiting, Auth, Idempotenz)
 Datenbanken: MS SQL Server, Oracle, PostgreSQL, MongoDB
-Cloud & DevOps: Azure, Docker, CI/CD Pipelines (Jenkins, GitHub Actions), Google Cloud
+Cloud & DevOps: Microsoft Azure (Azure Functions, Azure Storage, Azure SQL, Application Insights, Cost Management), Docker, CI/CD Pipelines (Jenkins, GitHub Actions), Google Cloud
 Tools & Versionierung: PowerShell, Git, GitHub, Bitbucket, Jira, Confluence, Slack
 Softwarequalität: Agile, Scrum, SOLID, DRY, Clean Code
 KI-gestützte Entwicklung: GitHub Copilot, OpenAI Codex
-Soft Skills: Problemlösung und kritisches Denken, Selbstmotivation und Eigeninitiative, Teamarbeit, kontinuierliches Lernen
-und Weiterentwicklung, Anpassungsfähigkeit und Flexibilität
-BERUFSERFAHRUNG
-Volunteer Software Developer (Remote) | LegalAid — Berlin, Deutschland
+Soft Skills: Problemlösung und kritisches Denken, Selbstmotivation und Eigeninitiative, Teamarbeit, kontinuierliches Lernen und Weiterentwicklung, Anpassungsfähigkeit und Flexibilität
+
+
+Berufserfahrung
+Volunteer Software Developer (Remote)  |  LegalAid — Berlin, Deutschland
 Feb 2026 – Jetzt
-• Entwicklung einer Full-Stack-Webanwendung mit Next.js, NestJS, Drizzle ORM und PostgreSQL in einer modularen
-Architektur, einschließlich wiederverwendbarer UI-Komponenten und responsiver Benutzeroberflächen.
-• Entwurf und Implementierung einer CRUD-REST-API für juristische Vorgänge mit Caching, Rate Limiting,
-Authentifizierung/Autorisierung und Idempotenz zur Sicherstellung von Performance und Datensicherheit.
-• Aufbau eines Admin-Bereichs mit geteilten Libraries in einem zentralen Package-Verzeichnis zur Wiederverwendung
-zwischen User- und Admin-Anwendung.
-• Implementierung des Admin-App-Logins mit rollenbasierter Zugriffskontrolle (RBAC) mittels Better Auth zur
-Autorisierung von Administratoren beim Login.
-• Konsequente Anwendung der SOLID- und DRY-Prinzipien bei der Architektur; Einsatz von OpenAI Codex zur
-Unterstützung bei der Analyse, der Implementierung und dem Refactoring.
-Junior Software Developer | FNZ Group — München, Deutschland
+Entwicklung einer Full-Stack-Webanwendung mit Next.js, NestJS, Drizzle ORM und PostgreSQL in einer modularen Architektur, einschließlich wiederverwendbarer UI-Komponenten und responsiver Benutzeroberflächen.
+Entwurf und Implementierung einer CRUD-REST-API für juristische Vorgänge mit Caching, Rate Limiting, Authentifizierung/Autorisierung und Idempotenz zur Sicherstellung von Performance und Datensicherheit.
+Aufbau eines Admin-Bereichs mit geteilten Libraries in einem zentralen Package-Verzeichnis zur Wiederverwendung zwischen User- und Admin-Anwendung.
+Konsequente Anwendung der SOLID- und DRY-Prinzipien bei der Architektur; Einsatz von OpenAI Codex zur Unterstützung bei der Analyse, der Implementierung und dem Refactoring.
+Junior Software Developer  |  FNZ Group — München, Deutschland
 Sept 2022 – Juli 2024
-• Entwicklung moderner Webanwendungen mit ASP.NET Core, Entity Framework Core, React und SQL Server in einem
-agilen Scrum-Team, inkl. Schichtenarchitektur und REST-API-Design.
-• Implementierung von REST-APIs und aktive Mitwirkung bei Architektur- und Designentscheidungen.
-• Verantwortlich für Debugging, Fehleranalyse, Datenbankzugriffe mit EF Core, automatisierte Tests und kontinuierliche
-Bereitstellung über CI/CD.
-• Enge Zusammenarbeit mit funktionsübergreifenden Teams (Dev, QA, BA, Delivery); Anwendung von Clean Code & Best
-Practices zur Sicherstellung von Stabilität und Skalierbarkeit.
-Werkstudent Full-Stack Developer | BMW AG — München, Deutschland
+Entwicklung moderner Webanwendungen mit ASP.NET Core, Entity Framework Core, React und SQL Server in einem agilen Scrum-Team, inkl. Schichtenarchitektur und REST-API-Design.
+Implementierung von REST-APIs und aktive Mitwirkung bei Architektur- und Designentscheidungen.
+Verantwortlich für Debugging, Fehleranalyse, Datenbankzugriffe mit EF Core, automatisierte Tests und kontinuierliche Bereitstellung über CI/CD.
+Enge Zusammenarbeit mit funktionsübergreifenden Teams (Dev, QA, BA, Delivery); Anwendung von Clean Code & Best Practices zur Sicherstellung von Stabilität und Skalierbarkeit.
+Werkstudent Full-Stack Developer  |  BMW AG — München, Deutschland
 Mai 2021 – Juni 2022
-• Entwicklung einer containerisierten Full-Stack-Webanwendung mit Angular, Express, PostgreSQL und Docker,
-einschließlich der Implementierung von REST-APIs, Debugging und CI/CD mit Jenkins.
-• Praktische Erfahrung mit der Ein- und Zwei-Wege-Datenbindung, dem Angular-Routing, Pipes sowie der Erstellung
-benutzerdefinierter Direktiven in Angular.
-• Entwicklung von CRUD-APIs mit Express und deren Integration in das Angular-Frontend.
-• Einsatz von Jenkins-Pipelines zur Automatisierung von CI/CD-Prozessen sowie Nutzung von Bitbucket und Jira für die
-Versionsverwaltung und das Projektmanagement.
-Werkstudent Web Developer | Jatosha GmbH — München, Deutschland
+Entwicklung einer containerisierten Full-Stack-Webanwendung mit Angular, Express, PostgreSQL und Docker, einschließlich der Implementierung von REST-APIs, Debugging und CI/CD mit Jenkins.
+Praktische Erfahrung mit der Ein- und Zwei-Wege-Datenbindung, dem Angular-Routing, Pipes sowie der Erstellung benutzerdefinierter Direktiven in Angular.
+Entwicklung von CRUD-APIs mit Express und deren Integration in das Angular-Frontend.
+Einsatz von Jenkins-Pipelines zur Automatisierung von CI/CD-Prozessen sowie Nutzung von Bitbucket und Jira für die Versionsverwaltung und das Projektmanagement.
+Werkstudent Web Developer  |  Jatosha GmbH — München, Deutschland
 Dez 2020 – Apr 2021
-• Entwicklung von Benutzeroberflächen mit modernem JavaScript, HTML und CSS.
-• Entwicklung von Angular-Diensten, die die REST-APIs des .NET-Backends konsumieren.
-• Verwendung von Bitbucket und Jira zur Projektverwaltung.
-Software Engineering Intern | Digital Public School — München, Deutschland
+Entwicklung von Benutzeroberflächen mit modernem JavaScript, HTML und CSS.
+Entwicklung von Angular-Diensten, die die REST-APIs des .NET-Backends konsumieren.
+Verwendung von Bitbucket und Jira zur Projektverwaltung.
+Software Engineering Intern  |  Digital Public School — München, Deutschland
 Sept 2020 – Nov 2020
-• Entwicklung einer Webanwendung mit React & Firebase.
-• Nutzung von gcloud und GitHub Actions für Deployment & CI/CD.
-• Arbeiten nach agiler Methodik (Sprint-Prozesse, Reviews, Dailies).
-Analyst Software Engineer | TRG (Ibex Global) — Karachi, Pakistan
+Entwicklung einer Webanwendung mit React & Firebase.
+Nutzung von gcloud und GitHub Actions für Deployment & CI/CD.
+Arbeiten nach agiler Methodik (Sprint-Prozesse, Reviews, Dailies).
+Analyst Software Engineer  |  TRG (Ibex Global) — Karachi, Pakistan
 Mär 2008 – Mär 2010
-• Entwicklung von Webanwendungen & Windows-Services mit ASP.NET, SQL & C#.
-• Design & Implementierung von CRM-Modulen und Reporting-Diensten.
-• Aufrechterhaltung des professionellen und technischen Wissens durch Schulungsworkshops und Zertifizierungen.
-KLEINE PERSÖNLICHE TECHNISCHE PROJEKTE
-Cloud Resume | Eigenes Projekt – Azure
-• Serverlose Lebenslauf-Website auf Azure: Frontend in Azure Storage, API als C#-Function (.NET 9), Azure SQL. CI/CD mit GitHub Actions, SOLID/DRY, Retry-Logik. Im kostenlosen Kontingent mit Budgetwarnung (Cost Management) und Application Insights.
-SMT_OMS | Eigenes Projekt – Systemdesign
+Entwicklung von Webanwendungen & Windows-Services mit ASP.NET, SQL & C#.
+Design & Implementierung von CRM-Modulen und Reporting-Diensten.
+Aufrechterhaltung des professionellen und technischen Wissens durch Schulungsworkshops und Zertifizierungen.
+
+
+Kleine Persönliche Technische Projekte
+Cloud Resume: Lebenslauf-Website mit Live-Zähler und KI-Job-Match auf Azure | Eigenes Projekt – Azure |
+Live: Cloud-Resume
+Meine Lebenslauf-Website läuft komplett in der Azure-Cloud: serverlos mit Storage, C#-Function (.NET 9) und Azure SQL, dazu ein KI-Job-Match mit Azure AI Language. Deployment per GitHub Actions, sauberer Code nach SOLID/DRY, Monitoring mit Application Insights und Budgetwarnung, alles im kostenlosen Kontingent. 
+SMT_OMS | Eigenes Projekt – Systemdesign 
 Umsetzung eines Order-Management-Systems mit ASP.NET Core, Entity Framework Core und SQLite in einer sauberen, modularen Architektur nach SOLID- und DRY-Prinzipien. Einsatz von Docker und GitHub Actions für automatisierte Builds und Continuous Integration.
-Event-Driven WPF Task Management System | Eigenes Projekt – Systemdesign
-• Entwicklung und Umsetzung einer WPF-Desktop-Anwendung mit MVVM-ähnlicher Struktur und eventbasierter Architektur.
-• Anwendung von SOLID- und DRY-Prinzipien für gut wartbaren und erweiterbaren Code.
-• Nutzung von Entity Framework Core für die Speicherung und Verwaltung von Daten.
-AUSBILDUNG
-Microsoft | Online
-Azure Foundation – Zertifizierung | Geplant am 17. Dez. 2026
-PeopleCert | Online
-DevOps Foundation – Zertifizierung | Bestanden am 29. Juli 2026
-velpTEC GmbH | München, Deutschland
-Fortgeschrittene Schulung im Bereich Cloud Computing mit zusätzlicher Qualifikation in DevOps und Docker | Sept 2025 – Jan 2026
-BFZ | München, Deutschland
-B2 Berufssprachkurs | Sept 2024 – Apr 2025
-Initiativgruppe | München, Deutschland
-Integrationskurs (B1) mit Kinderbetreuung | Sept 2013 – Apr 2015
-Sir Syed University of Engg & Tech | Karachi, Pakistan
-Bachelor of Science in Computer Engineering (final GPA: 3.28, best: 4.0) | Jan 2004 – Mär 2008
-PERSÖNLICHE INFORMATIONEN
+Event-Driven WPF Task Management System | Eigenes Projekt – Systemdesign 
+Entwicklung und Umsetzung einer WPF-Desktop-Anwendung mit MVVM-ähnlicher Struktur und eventbasierter Architektur. Durch die Anwendung von SOLID- und DRY-Prinzipien ist der Code gut wartbar und leicht erweiterbar. Für die Speicherung und Verwaltung der Daten kommt Entity Framework Core zum Einsatz. 
+
+
+Ausbildung
+Microsoft  |  Online
+Azure Foundation – Zertifizierung  |  Geplant  am 17. Dez. 2026
+PeopleCert  |  Online
+DevOps Foundation – Zertifizierung  |  Bestanden am 29. Juli 2026
+velpTEC GmbH  |  München, Deutschland
+Fortgeschrittene Schulung im Bereich Cloud Computing mit zusätzlicher Qualifikation in DevOps und Docker  |  Sept 2025 – Jan 2026
+BFZ  |  München, Deutschland
+B2 Berufssprachkurs  |  Sept 2024 – Apr 2025
+TUM  |  München, Deutschland
+Master of Science in Informatics (GPA: 2.00) (unvollständig) |  Sept 2016 – Apr 2021
+Initiativgruppe  |  München, Deutschland
+Integrationskurs (B1) mit Kinderbetreuung  |  Sept 2013 – Apr 2015
+Sir Syed University of Engg & Tech  |  Karachi, Pakistan
+Bachelor of Science in Computer Engineering (final GPA: 3.28, best: 4.0)  |  Jan 2004 – Mär 2008
+
+
+Persönliche Informationen
 Sprachen: Deutsch (B2), Englisch (C1)
 Staatsangehörigkeit: Deutsch
+Reisebereitschaft: Vorhanden (flexibel für Projekteinsätze) 
